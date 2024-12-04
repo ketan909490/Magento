@@ -1,0 +1,278 @@
+=====================magento install =============== :- 
+
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m247 2.4.7
+ 
+
+1)
+------------------------------------------------------------------------------------------------------
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition test247 2.4.7
+-------------------------------------------------------------------------------------------------------
+composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition test 2.4.6-p3
+mysql -u root -p
+password : root
+
+create database test;
+
+
+3)
+----------------------------------------------------------------------------------------------------
+sudo php bin/magento setup:install --base-url=http://139.162.1.221/php81/magento/pub/ --db-host=localhost --db-name=magento --db-user=root --db-password='Patyam$123#'  --admin-firstname=admin --admin-lastname=admin --admin-email=admin@gmail.com --admin-user=admin --admin-password=admin123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200
+
+
+-----------------------------------------------------------------------------------------------------
+sudo php bin/magento setup:install --base-url=http://192.168.2.106/php82/trendyol/pub/ --db-host=localhost --db-name=trendyol --db-user=root --db-password=root --admin-firstname=admin --admin-lastname=admin --admin-email=ketan@vdcstore.com --admin-user=admin --admin-password=admin123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200
+
+
+create admin user :-
+
+php bin/magento admin:user:create --admin-user=kishore --admin-password=kishore1234 --admin-email=v-kishore.thummar@ada-asia.com --admin-firstname=kishore --admin-lastname=kishore
+------------------------------------------------------------------------------------------------------------
+sudo chmod -R 777 app/ generated/ var/ pub/
+bin/magento sampledata:deploy
+
+
+Public Key: 7c018006799466c681ad507e27904677
+Private Key: 289077c86e811661a8f7751828485d3a 
+----------------------------------------
+sudo chmod -R 777 *
+-----------------
+=>generate admin authentication error
+
+ bin/magento module:disable Magento_TwoFactorAuth
+   app/etc/config.ph
+   'Magento_TwoFactorAuth' => 0,
+------------------------------------------------
+app/etc/config.php
+admin link to get from env.php file app/etc/env
+'backend' => [
+        'frontName' => 'admin_lmnv9m'
+"admin_lmnv9m"this name is use for admin url of the site
+------------------------------------------------
+
+sudo php bin/magento setup:upgrade
+sudo php bin/magento setup:di:compile
+sudo php bin/magento setup:static-content:deploy -f
+sudo php bin/magento cache:flush
+sudo systemctl restart varnish
+
+
+sudo php bin/magento indexer:reindex &
+sudo chmod -R 777 app/ generated/ var/ pub/
+
+php -dmemory_limit=-1 bin/magento catalog:images:resize
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+php -dmemory_limit=-1 bin/magento setup:upgrade
+php -dmemory_limit=-1 bin/magento setup:di:compile
+php -dmemory_limit=-1 bin/magento setup:static-content:deploy -f
+php -dmemory_limit=-1 bin/magento indexer:reindex
+php -dmemory_limit=-1 bin/magento cache:flush
+
+php bin/magento setup:static-content:deploy sv_SE en_US  -f
+--------------------------------------------------------
+php -dmemory_limit=-1 bin/magento setup:upgrade && php -dmemory_limit=-1 bin/magento setup:static-content:deploy -f && php -dmemory_limit=-1 bin/magento cache:flush
+
+php8.1 -dmemory_limit=-1 bin/magento setup:upgrade
+php8.1 -dmemory_limit=-1 bin/magento setup:di:compile
+php8.1 -dmemory_limit=-1 bin/magento setup:static-content:deploy -f
+php8.1 -dmemory_limit=-1 bin/magento indexer:reindex
+php8.1 -dmemory_limit=-1 bin/magento cache:flush
+sudo chmod -R 777 generated/ var/ pub/
+
+php -dmemory_limit=-1 bin/magento deploy:mode:show
+
+php -dmemory_limit=-1 bin/magento deploy:mode:set developer
+php -dmemory_limit=-1 bin/magento deploy:mode:set production
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+php -dmemory_limit=-1 bin/magento deploy:mode:set production -s -----> for skip compilation process 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+php bin/magento s:up
+php bin/magento s:d:c
+php bin/magento c:f
+chmod -R 777 generated/ var/ pub/
+-----------------------------------------------------------------------
+
+php bin/magento s:up
+php bin/magento s:d:c
+php bin/magento s:s:d -f
+php bin/magento i:rei
+php bin/magento c:f
+
+bin/magento deploy:mode:set developer
+bin/magento deploy:mode:set production
+php bin/magento cron:run
+
+ps -aufx | grep php ---------------> for check running command 
+
+chmod -R 777 generated/ var/ pub/
+--------------------------
+
+php bin/magento s:up
+php bin/magento s:s:d -f
+php bin/magento c:f
+chmod -R 777 generated/ var/ pub/
+
+-----------------
+bin/magento deploy:mode:set developer
+--------------------------------------------------------------------
+$writer = new \Zend_Log_Writer_Stream(BP . '/var/log/custom.log');
+                $logger = new \Zend_Log();
+                $logger->addWriter($writer);
+
+                $logger->info('----------------- get FGSDFGSDSDFSDFS --------------- ');
+                $logger->info(print_r($abc->toHtml(),true));
+                 
+                
+              
+                
+                
+                
+                
+ -------------------------------------------------------------------------------------------------------------------
+vendor/bin/phpcs --standard=Magento2 app/code/Vdcstore/OpenGraph
+
+vendor/bin/phpcbf --standard=Magento2 app/code/Vdcstore/OpenGraph
+
+vendor/bin/phpcs --standard=Magento2 app/code/Vdc/OpenGraph/ --severity=10               
+
+
+
+-------------------------------------------------------------
+
+
+kld15@$%96aQpC10$%12SC
+
+SSH Details : 
+++++++++++++++++++++++++++++++++++++++++++++
+SSH Host : 139.162.1.221
+SSH User : root
+OLD Pass : LTAAwe5L@#110
+New PAss : kld15@$%96aQpC10$%12SC
+SSH Port : 22SSH 
+Command : ssh root@139.162.1.221
+Database Details : 
+++++++++++++++++++++++++++++++++++
+Database Access URL : http://139.162.1.221/adminer.php
+Database Root User  : root
+Database Root Pass  : Patyam$123#
+/var/www/html/php81/market_place
+admin url -- http://demo.vdcstore.com/php81/market_place/pub/admin
+Cmd : ssh root@139.162.1.221      Psw : kld15@$%96aQpC10$%12*SC
+
+http://139.162.1.221/php81/ketan246/pub/
+http://139.162.1.221/php81/magento/pub/admin
+
+u :- admin
+p :- admin123
+
+
+
+
+
+
+sudo php bin/magento setup:install --base-url=http://139.162.1.221/php81/ketan246/pub/ --db-host=localhost --db-name=ketan246 --db-user=root --db-password='Patyam$123#' --admin-firstname=admin --admin-lastname=admin --admin-email=admin@gmail.com --admin-user=admin --admin-password=admin123 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200stylenations :-
+
+------------------------------------------------------------------------------
+
+Shopify Figma - https://www.figma.com/file/gFUcB1Izdm2tprDMR3BDNK/Untitled?type=design&node-id=1-2&mode=design&t=cfJwmK6ugLjf3gxQ-0
+
+Magento Figma - 1 - https://www.figma.com/file/SbQWFVb2IIAJMcXZNQ1E0F/Ashopi?type=design&node-id=0-1&mode=design&t=3dPN67yrDXNSVTK0-0
+
+Magento Figma - 2 - https://www.figma.com/file/M6W6cEvlv3cWN8323fB0Wr/Freshfield?type=design&mode=design
+
+
+
+
+
+-----------------------------------------------------
+
+du -csh *
+
+zip -r filename.zip  foldername/ (for create a zip)
+mv vender vender__
+cp -r vender vender_org (for backup command)
+
+/// Database backup
+
+mysqldump -u root -p shanghaisells > shanghaisells_27_feb.sql
+S-XRWpshU-KqWfeO
+
+
+mysqldump -u awsdyqmyqu -p awsdyqmyqu > awsdyqmyqu16jan.sql
+
+
+for import sql
+mysql -u root -p shanghaisells74 < shanghaisells74.sql
+
+
+
+find . -type f -exec chmod 644 {} \;
+find . -type d -exec chmod 755 {} \;
+chmod 644 ./app/etc/*.xml
+chmod +x bin/magento
+
+
+// To import data to db
+mysql -u root -p DBName < sql file
+
+
+
+wget projedct-domain-name/with zip-file
+=====================================================
+magento update
+=============Update magento ==================
+
+1) backup composer.json
+	cp composer.json composer.json.bak
+
+3) update magento version
+	composer require-commerce magento/product-community-edition 2.4.7 --no-update 
+	composer require magento/product-community-edition=2.4.7 --no-update
+
+
+   
+
+4) composer update
+	composer update
+	composer update -W --> For update all the dependancy 
+	
+	
+5) rm -rf var/cache/ var/page_cache/ var/view_preprocessed/ generated/
+6) php bin/magento s:up
+   php bin/magento s:d:c
+   php bin/magento s:s:d -f
+   php bin/magento c:f
+   chmod -R 777 magento244/
+
+	
+	
+	api
+	curl -X GET "http://127.0.0.1/php81/test/pub/rest/V1/products?searchCriteria" -H "Authorization:92clg1rei3detu8zy488i38wli8fs4ia"
+
+export database : 
+
+mysqldump -u {username} -p {dbname} > {filename}.sql
+mysqldump -u a68c3541_confusr -p a68c35
+php -dmemory_limit=-1 bin/magento indexer:reindex
+php -dmemory_limit=-1 bin/magento cache:flush41_confilivedb > a68c3541_confilivedb_11_04_2024.sql
+
+mysql -h 127.0.0.1 -u root -p confidentialcouture < a68c3541_confilivedb_11_04_2024.sql
+
+sudo update-alternatives --set php /usr/bin/php7.4
+
+systemctl enable elasticsearch.service
+systemctl start elasticsearch.servicejecg xktd dojy upiy
+service elasticsearch status
+service elasticsearch restart
+
+
+
+jecg xktd dojy upiy
+
+
+
+
+

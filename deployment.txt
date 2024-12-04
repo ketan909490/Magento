@@ -1,0 +1,41 @@
+ 1927  cd vanssit/
+ 1928  cd .modman/
+ 1929  git status
+ 1930  git pull
+ 1931  git checkout app/design/frontend/Specommerce/Vans/Magento_Theme/web/js/common.js
+ 1932  git checkout app/design/frontend/Specommerce/Vans/requirejs-config.js
+ 1933  git checkout app/design/frontend/Specommerce/Vans/web/jquery/jquery-ui.js
+ 1934  git status
+ 1935  git pull
+ 1936  git status
+ 1937  git checkout -b rel_vans_vit_182
+ 1938  git status
+ 1939  git add app/design/frontend/Specommerce/Vans/web/js/calendar.js
+ 1940  git commit -m "https://adaglobal.atlassian.net/browse/VIT-182 Fix: Guest checkout: When select DOB then Scrolls up automatically."
+ 1941  git push -u origin rel_vans_vit_182
+ 1942  cd ../../vansdocroot
+ 1943  cd .modman/
+ 1944  git status
+ 1945  git fetch --all
+ 1946  git merge --no-ff rel_vans_vit_182
+ 1947  git merge --no-ff origin/rel_vans_vit_182
+ 1948  git merge --no-ff origin/rel_vans_vsd_7506
+ 1949  cd ..
+ 1950  sh command.sh && php bin/magento s:d:c && sh sync.sh &
+ 1951  cd ../vanssit/.modman/
+ 1952  git status
+ 1953  git add app/design/frontend/Specommerce/Vans/requirejs-config.js
+ 1954  git commit -m "Fix: add missing requirejs"
+ 1955  git push
+ 1956  cd ../../vansdocroot/.modman/
+ 1957  git checkout rel_vans_vit_182
+ 1958  git pull
+ 1959  git checkout staging
+ 1960  git merge --no-ff rel_vans_vit_182
+ 1961  cd ..
+ 1962  sh command.sh && php bin/magento s:d:c && sh sync.sh &
+ 1963  php bin/magento setup:upgrad
+ 1964  php bin/magento s:d:c
+ 1965  php bin/magento s:s:d -f
+ 1966  php bin/magento i:rei
+ 1967  php bin/magento c:f

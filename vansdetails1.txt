@@ -1,0 +1,183 @@
+ssh -i ketan kishore.thummar@10.22.0.33
+
+-------------------Orange logic----------------------------------------------
+https://dam.vans.com/
+
+ID: karming.song@gmg.com
+
+PWD: @Today123
+Vans DAM - Login/Registration
+ 
+
+VN000Q77
+
+Problem :- we need to client id and secrat key for addcess api
+ *--------------------------sitecore content hub--------------------------
+
+Columbia Dam
+https://www.contenthub.columbia.com/en-US/Account
+
+ID:mukesh.s@gmg.com
+
+PWD:Dubai@2024
+Sign in
+ 
+
+ https://doc.sitecore.com/ch/en/developers/cloud-dev/rest-api.html
+
+problem :- can not connect as per user guid
+
+
+
+ <Path_WebHigh>
+<URI>rtmp://s3098o8h1l.cloudfront.net/OL/WebHigh/e/4/8/8/OL60825.mp4</U
+RI>
+<Width type="Numeric">640</Width>
+<Height type="Numeric">360</Height>
+</Path_WebHigh>
+<Path_WebLow>
+<URI>rtmp://s3098o8h1l
+.loudfront.net/OL/WebLow/1/f/1/4/OL60825.mp4</URI>
+<Width type="Numeric">320</Width>
+<Height type="Numeric">180</Height>
+</Path_WebLow>
+
+------------------------------------------------------------------
+live site url 
+https://www.vans.com.my/
+
+
+customer creds 
+kunaltest1@mailinator.com 
+Test@123
+ 
+kunal.swain@accuratecg.com
+
+-----------------------------------------------------------------
+staging site url 
+https://vanssgstg.ada-asia.my/test.php
+https://vanshkstg.ada-asia.my/test.php
+https://vanshkstg.ada-asia.my/en/test.php
+https://vansmystg.ada-asia.my/test.php
+
+staging admin url
+https://vanssgstgadmin.ada-asia.my/adaadmin/
+kishore / kishore@1234
+----------------------------------------------------------------------
+qa admin url
+https://vanssgqa.ada-asia.my/adaadmin/admin/
+------------------------------------------------------------------------
+Live admin url
+https://vansadmin.ada-asia.my/e8a042d30d437982af0729f1fc787f7e/admin/
+
+
+
+https://team.atlassian.com/
+Ketan@909490
+
+
+every time use this
+dev is 10.22.0.101
+ssh kishore.thummar@10.22.0.101
+on dev server path for SIT env is
+/ada-apps/vanssit/
+
+sudo su adauser
+
+ALWAYS switch to adauser using command to run any magento command or update any file
+
+SG: https://vanssgsit.ada-asia.my/test.php
+MY: https://vansmysit.ada-asia.my/test.php
+HKCH: https://vanshksit.ada-asia.my/test.php
+HKEN: https://vanshksit.ada-asia.my/en/test.php
+
+
+
+cat ~/.ssh/authorized_keys
+
+
+-----------------------------------------
+
+Staging 10.22.0.33
+ssh kishore.thummar@10.22.0.33
+ssh kishore.thummar@10.0.12.133
+
+
+
+
+
+do not run magento commands in .modman folder
+
+instead one folder back in /ada-app/vanssit/
+
+to setup new changes run command sh command.sh
+if you need running dicomple, run this separately like php bin/magento s:d:c 
+
+
+
+php bin/magento setup:upgrad && php bin/magento s:d:c && php bin/magento s:s:d -f && php bin/magento c:f && php bin/magento i:rei &
+
+php bin/magento setup:upgrad
+
+php bin/magento s:d:c
+
+php bin/magento s:s:d -f
+php bin/magento c:f
+php bin/magento i:rei
+
+595921
+
+sh command.sh
+sudo systemctl restart varnish
+sh command.sh && php bin/magento s:d:c && sh reindex.sh && sh sync.sh
+sh command.sh && php bin/magento s:d:c &&  sh sync.sh
+
+php bin/magento sp:build-menu-redis-cache --storecode="my"
+php bin/magento sp:build-menu-redis-cache --storecode="sg"
+php bin/magento sp:build-menu-redis-cache --storecode="en"
+php bin/magento sp:build-menu-redis-cache --storecode="cn"
+
+7493
+v-kishorethummar
+password :- bitbucket
+live Database
+mysql -h vans-prod-rds-old1.cdjxr9hzlkjy.ap-southeast-1.rds.amazonaws.com -u vansprodusr -p
+2hSWPgCjCsT5
+
+
+ CONFLUENC TICKETE
+ https://ada-asia.atlassian.net/wiki/spaces/ADACO/pages/263225345/September+09+VSD+7506+VIT+182+191+169
+26
+
+
+dotdigital
+https://r3-app.dotdigital.com/SelectAccount
+ app/code/Specommerce/Processfiles/Model/Stgprocess/CreateCsvForStaging.php
+        modified:   app/design/frontend/Specommerce/Vans/Magento_Checkout/templates/cart/item/default.phtml
+
+        Vansqa@123
+        gytugajew@mailinator.com
+        mawaje@mailinator.com
+        ketan@vdcstore.com
+
+
+QA Database
+'host' => '10.22.0.33',
+'dbname' => 'vansqadb',
+'username' => 'vansqa',
+'password' => 'd7579t3t',
+
+mysqldump -u vansqa -p vansqadb > vansqadb21-10.sql
+
+ ssh -o StrictHostKeyChecking=no -i ~/adauser.pem adauser@10.0.12.135
+ ssh -o StrictHostKeyChecking=no -i ~/adauser.pem adauser@10.0.12.204
+
+ sudo tail -f /var/log/apache2/error.log var/log/*.*
+
+ https://requests.dotdigital.com/hc/en-gb/requests/998089
+mv prod_update_cn.csv prod_update_my.csv prod_update_en.csv prod_update_sg.csv /ada-apps/vansdocroot/var/urapidflow/import
+
+
+if product not show
+update vansprod.cataloginventory_stock_item set qty = 1;
+update vansprod.cataloginventory_stock_status set qty =1, stock_status=1;

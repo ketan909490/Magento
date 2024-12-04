@@ -1,0 +1,126 @@
+MAGENTO TRENEE
+--------------------------------------------------
+Task-1
+    Basic HTML,CSS,JS,AJAX,JQUERY
+----------------------------------------------
+Task-2
+    Learn php 
+    Do Crud Operation using core php
+-------------------------------------------------------------------------------------------------------
+Task-3
+    Registation page,Login page using AJAX 
+    in login admin and user login 
+    when login admin then redirect in dashbord page and 
+    user login then redirect on frontend page 
+    using AJAX.
+    Admin can add,edit and delete category and product.
+    Category display on navbar and user cane select category and show product without load page (using ajax).
+--------------------------------------------------------------------------------------------------------------
+Task-4
+    1-Basic knowlage of magento 
+    2-learn admin panel(all magento ui)
+-----------------------------------------------------------------------------------------------------------
+Task-5
+    After learn ui two perform two task
+    Task-1
+        1) Remove sidebar from any one category and make product grid part full width.
+        2) Create Product with Wholesale Price.
+            If customer add 1-5 Qty to cart Price Should be 200.
+            If customer add 6-10 Qty to cart Price Should be 150.
+            If customer add 11-15 Qty to cart Price Should be 100.
+            If customer add 16-20 Qty to cart Price Should be 50.
+        3) Create A product with Color and Size option selection.
+            Make sure Product page image image should be change once you change the option.
+        4) Add 20% discount for any one category.
+        5) Create a coupon code 10OFF.
+            This coupon code only work if category is men and cart total grater then 200 and applicable only one time for one customer.
+        6) Create a discount without coupon code.
+            On cart page discount should auto applied if total is grater than 500.
+        7) Add Custom paragraph in the Customer Welcome Email.
+        8) Place an order with multiple items and create partial invoice and Shipment.
+        ------------------------------------------------------------------------------
+    Task-2
+        1) Create a block with Image and it should show on every page before footer
+        2) Create a Page with newslatter subscription form
+        3) Configure email in the local and check all the emails are working.
+        4) Change the logo for the email temaplate.
+        5) Create 2 store and store view for each store.
+        6) Add multiple currency INR and USD.
+        7) On frontend if store view switch then Currency should automatically switch.
+        8) Create 3 New Attributes
+                is_bestseller
+                is_on_sale
+                is_featured 
+            Create group of "Custom Attributes" and show on product edit in backend and add the above attributes to the this group.
+        9) On homepage show featured products collection in GRID format.
+        10) Add bestseller in the sort by options on the Product list page.
+        11) Change per page qty to 36 on Prodcut list page.
+        12) Remove .html from the urls
+        13) On checkout page add the terms and condition checkbox.
+        14) on checkout address country dropdown only India and United States should be visible
+        15) On checkout if country is selected India then 18% tax should apply and for the USA 12% should be apply.
+        16) Enable COD and Check/Money payment method for checkout.
+            If coustomer country is India then COD will only selactable.
+            If coustomer country is USA then Check/Money will only selactable.
+----------------------------------------------------------------------------------------------------------------------
+Task-6
+    1) Magento Environment Compatibility 
+    2) We need to complete admin panel
+    3) Require files knowledge for install extension
+    4) Commands for use in Magento 2
+    5) File Structure module in Magento 2
+    6) Files Knowledge. Ex: system.xml (why we are use this file in Magento 2)
+    7) Create Hello World Extension
+        Print hello world in fronend and backend side.
+    8) Create crud operation using by fronted and admin
+    9) Create Newsletter Popup Extension
+    10) Create Auto invoice Extension
+    11) Create Hide Price Extension
+----------------------------------------------------------------------------------------------------------------------------------
+Task-7
+    1-Print hello world in fronend and backend side.
+    2- system.xml : 
+    1). enable/disable
+    2). text field (1- digits , 2 - no capital)
+    3). multiselect (customer grps) (2 fields --> custom options)
+    4) select ()
+    5). colorpicker
+    6). image uploader
+    7). choose file
+    (with dependency)
+
+    Create conteroller
+    create frontend/routes.xml 
+    create layout : - {front_name/controllerfoldername/actionfile}
+
+    = > helper -> system.xml values
+    = > Block -> get helper value 
+    = > layout -> call block and phtml template
+    = > phtml : - system.xml value print
+------------------------------------------------------------------------------------------------------------------------------------------
+Task-8
+    Create Custom system confugiration
+    Create Custom Menu
+    Create grid in admin side in this grid you can add,edit and delete (Like product grid).
+    Create Tab in Form when we click on edit or add new then show form in tab formet.
+    Show data on Frontend any page like table formet.
+    Add Delete Button on frontend side and do delete record on grid and db table
+-------------------------------------------------------------------------------------------------------------
+Taks-9
+    	Plugin : - https://www.mageplaza.com/magento-2-module-development/magento-2-plugin-interceptor.html#explainations
+
+	Event & observer :- https://www.mageplaza.com/magento-2-module-development/magento-2-create-events.html#understand-catching-and-	handling-a-event
+
+	Preference :- https://www.mageplaza.com/devdocs/how-use-plugin-preference-rewrite-block-model-controller-helper-magento-2.html#block-override-1
+    	 Hide add to cart and price.
+    	 show the "Login to See Details" button on the frontend for guest (non-logged-in users) only.
+	After login, the "Login to See Details" button should be hidden, and the "Add to Cart" button, price, color, and size elements should be displayed.
+	when click "Login to See Details" then re direct on login page 
+--------------------------------------------------------------------------------------------------------------------------------------------
+Task-10
+	Newsletter popup --- https://www.vdcstore.com/magento-2-newsletter-popup-extension.html  --- Like this.
+	Please read User Guide.
+    
+    
+    
+    
